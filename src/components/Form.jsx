@@ -2,23 +2,19 @@ import React, { useState } from 'react'
 
 const Form = () => {
 
-    const [input,setInput]=useState({
-        username:"",
-        email:"",
-        password:"",
-        checkbox:""
-
-    })
+    const [input,setInput]=useState({})
 
     const handleChange = (e)=>{
         const name = e.target.name;
-        const value = e.targe.value;
+        const value = e.target.value;
 
-        setInput(values=>({...values, [name]:value}))
+        setInput({...input, [name]:value})
     }
     const handleSubmit = (e)=>{
-        
-        alert("Form Submit")
+        e.preventDefault()
+        console.log(input)
+        setInput("")
+     
     }
 
   return (
