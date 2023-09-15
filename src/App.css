@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fbf3ff;
+}
+.container {
+  position: absolute;
+  max-width: 50rem;
+  height: 31.25rem;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myRightCtn {
+  position: relative;
+  background-image: linear-gradient(45deg, #69BAFA,#12222e);
+  border-radius: 1.563rem;
+  height: 100%;
+  padding: 1.563rem;
+  color: rgb(192, 192, 192);
+  font-size: 0.75rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.myLeftCtn {
+  position: relative;
+  background: #fff;
+  border-radius: 1.563rem;
+  height: 100%;
+  padding: 1.563rem;
+  padding-left: 3.125rem;
+}
+.myLeftCtn header {
+  color: #69BAFA;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.row {
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myCard {
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 1.563rem;
+  box-shadow: 0rem 0.625rem 2.5rem -0.625rem rgba(0, 0, 0 0.7);
+}
+.myRightCtn header {
+  color: #fff;
+  font-size: 2.75rem;
+}
+.box {
+  position: relative;
+  margin: 1.25rem;
+  margin-bottom: 6.25rem;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.myLeftCtn .myInput {
+  width: 14.37rem;
+  border-radius: 1.563rem;
+  padding: 0.625rem;
+  padding-left: 3.125rem;
+  border: none;
+  box-shadow: 0rem 0.625rem 3rem -0.875rem rgba(0, 0, 0, 0.7);
+}
+.myForm {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.myLeftCtn .butt {
+  background: linear-gradient(45deg, #69BAFA,#12222e);
+  color: #fff;
+  width: 14.375rem;
+  border: none;
+  border-radius: 1.725rem;
+  padding: 0.625rem;
+  box-shadow: 0rem 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.7);
+  margin-top: 0.625rem;
+}
+
+.myLeftCtn .butt:hover {
+  background: linear-gradient(45deg,#69BAFA,#12222e);
+}
+
+.myLeftCtn .butt:focus {
+  outline: none;
+}
+
+.myLeftCtn .fa-solid {
+  position: relative;
+  color: #69BAFA;
+
+  left: 2.2rem;
+}
+
+
+
+.butt_out {
+  background: transparent;
+  color: #fff;
+  width: 7.5rem;
+  border-radius: 1.725rem;
+  padding: 0.625rem;
+   box-shadow: 0rem 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.7);
+
+}
+.butt_out:hover {
+  border: 2px solid #eecbff;
+}
+.butt_out:focus{
+  outline: none;
 }
